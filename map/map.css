@@ -1,0 +1,24 @@
+#quest {
+    position: ;
+    background-image: url("../assets/hyrulemap.jpg");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: calc(60vw * 642 / 900);
+    margin: auto;
+}
+
+.quest {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.quest.completed {
+    color: whitesmoke;
+    font-size: .9em;
+}
+
+.quest.completed:after {
+    content: ' ✔';
+}

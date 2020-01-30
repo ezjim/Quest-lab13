@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("assets/QuestTitilepage.jpg");
+    
+}
+img {
+    height: 88px;
+    width: 100px;
+    text-align: right;
+    
+}
+
+#selection {
+    width: 150px;
+    height: 150px;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    
+
+}
+form {
+    width: 700px;
+    justify-content: center;
+    text-align: left;
+    border: solid red 5px;
+    font-size: 20px;
+    color: #FFF;
+background-color: #232323;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+}
