@@ -19,7 +19,7 @@ cost user = makeUser(formData);
 saveUserData(user);
 
 //redirect to the map page
-window.location = 'map';
+window.location = 'map/map.html';
 
 
 });

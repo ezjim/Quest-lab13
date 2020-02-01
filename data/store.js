@@ -2,7 +2,7 @@
 // saves user data
 export function saveUserData(user) {
     const json = JSON.stringify(user);
-    localStorage.setItem('user');
+    localStorage.setItem('user', json);
 }
 // pull user data from local storage
 export function getUserData() {

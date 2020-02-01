@@ -1,4 +1,4 @@
-const bosses = {
+const bowser = {
     id: 'bowser',
     name: 'Bowser',
     title: 'The Final Fight',
@@ -54,26 +54,33 @@ const chompchomp = {
         `,
 
     choices: [{
-        id:'',
-        description: '',
-        result:`
+        id:'bargin',
+        description: 'You get to live, but you lose something',
+        result:` Lose a life, get to fight another day
         `,
         // hp: ??
         // gold: ??
     }, {
-        id:'',
-        description: '',
-        result:`
+        id:'fight',
+        description: 'battle and show chompy whos boss',
+        result:`you win!!!
         `,
         // hp: ??
         // gold: ??
     }, {
-        id:'',
-        description: '',
-        result:`
+        id:'escape',
+        description: 'lose all gold? and a life?',
+        result:`lose all gold and escape?
         `,
         // hp: ??
         // gold: ??  
     
     }]
 };
+
+const quests = [
+    bowser,
+    chompchomp,
+];
+
+export default quests;
