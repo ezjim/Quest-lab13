@@ -3,8 +3,8 @@ const bowser = {
     name: 'Bowser',
     title: 'The Final Fight',
     map: {
-        top: '80%',
-        left: '44%'
+        top: '17%',
+        left: '46%'
     },
     image: 'bowser.jpg',
     audio: 'bowserfalls.wav',
@@ -43,8 +43,8 @@ const chompchomp = {
     name: 'ChompChomp',
     title: 'Get in the Chommmppaaa',
     map: {
-        top: '60%',
-        left: '4%'
+        top: '85%',
+        left: '25%'
     },
     image: 'chompchomp.jpg',
     audio: 'bowserfalls.wav',

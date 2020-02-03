@@ -24,3 +24,27 @@ main {
     background: #e38548;
     font-weight: bolder;
 }
+.desc {
+    font-size: 30px;
+    text-shadow: red;
+    font-weight: 400;
+    background-color: burlywood;
+    
+}
+
+#image {
+    height: 200px;
+    width: 400px;
+    margin-top: -25%;
+    
+}
+
+.background {
+    background-image: url(../assets/chompchomp.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 70%;
+    height: 100%;
+    overflow: hidden;
+       
+}

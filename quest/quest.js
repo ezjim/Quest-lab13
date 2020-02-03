@@ -1,6 +1,9 @@
 import loadPlayerData from '../common/load-profile.js';
-import { getUserData, saveUserData } from '../data/store.js';
-import quest from '../data/api.js';
+import {
+    getUserData,
+    saveUserData
+} from '../data/store.js';
+import quests from '../data/api.js';
 import createChoice from './create-choice.js';
 import findById from '../common/find-by-ids.js';
 import scoreQuest from './score-quest.js';
@@ -9,14 +12,16 @@ loadPlayerData();
 
 //grab the query param from the URL
 const searchParams = new URLSearchParams(window.location.search);
+console.log(window.location.search)
 // go get quest id from the URL
 const questId = searchParams.get('id');
+console.log(questId);
 // findbyid to get quest
 const quest = findById(quests, questId);
-
+console.log(quest);
 // if no such quest
 if (!quest) {
-    window.location = '../map';
+    // window.location = '../map';
 }
 
 const title = document.getElementById('title');
@@ -30,8 +35,9 @@ const resultDescription = document.getElementById('result-description');
 
 //use quest we found to populate the dom
 title.textContent = quest.title;
+console.log(quest.title);
 image.src = '../assets/' + quest.image;
-audio.src = '../assets/' + quest.audio;
+audio.src = './assets/' + quest.audio;
 description.textContent = quest.description;
 
 // for each of the quests choic|
@@ -45,7 +51,7 @@ for (let index = 0; index < quest.choices.length; index++) {
 }
 
 choiceForm.addEventListener('submit', function (event) {
-
+    event.preventDefault();
     //get user choice
     const formData = new FormData(choiceForm);
     const choiceId = formData.get('choice');
@@ -55,7 +61,7 @@ choiceForm.addEventListener('submit', function (event) {
     //get userdata out of localstorage
     const user = getUserData();
     // generate a score and manipulate user state
-    scoreQuest(choice, quest.id, user)
+    scoreQuest(choice, quest.id, user);
 
     saveUserData(user);
 
@@ -65,6 +71,6 @@ choiceForm.addEventListener('submit', function (event) {
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;
     // reload profile for new stats
-    loadProfile(); // goes into state changes header
-    
+    loadPlayerData(); // goes into state changes header
+
 });

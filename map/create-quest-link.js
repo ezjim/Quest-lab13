@@ -8,6 +8,7 @@ function createQuestLink(quest) {
     // link.href = 'quest?' + searchParams.toString();
 
     link.href = '../quest/?id=' + quest.id;
+    console.log(quest.id);
 
     link.style.top = quest.map.top;
     link.style.left = quest.map.left;

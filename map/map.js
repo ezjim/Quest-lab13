@@ -10,26 +10,28 @@ loadPlayerData(); //wanting to load header on every page
 
 //grab playerdata from local storage
 const user = getUserData();
+console.log(user);
 
 // if dead or if they completed all the quest
 if (isDead(user) || hasCompletedAllQuest(quests, user)) {
     //send them to results page
+    console.log(quests);
     window.location = '../results';
 }
 // quest element for DOM
-const nav = document.getElementById('quest');
+const nav = document.getElementById('quests');
 
-for (let i = 0; i < quest.length; i++) {
+for (let i = 0; i < quests.length; i++) {
+    console.log(quests);
     //for every quest
-    const quest = quest[i];
+    const quest = quests[i];
     let questDisplay = null;
 
     //if user completed specific quest
     if (user.completed[quest.id]) {
         //make completed quest with checkmark
         questDisplay = createCompletedQuest(quest);
-    }
-    else {
+    } else {
         //otherwise make a link to the quest
         questDisplay = createQuestLink(quest);
     }

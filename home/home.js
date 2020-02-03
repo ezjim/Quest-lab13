@@ -1,4 +1,6 @@
-import { saveUserData } from '../data/store.js';
+import {
+    saveUserData
+} from '../data/store.js';
 import makeUserData from './make-user.js';
 
 // grab info from home page
@@ -19,5 +21,5 @@ userSignUp.addEventListener('submit', function (event) {
     saveUserData(user);
 
     // redirect us to the map page
-    window.location = 'map/map.html';
+    window.location = 'map/index.html';
 });

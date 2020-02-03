@@ -1,77 +1,51 @@
-/* .bg {
-    
-    width: 100%;
-    height: 100%;
-    border: 3px solid black;
-    margin-bottom: 1em;
-    background-repeat: no-repeat;
-    min-width: 1024px; */
-    /* The image used */
-    /* background-image: url('../assets/hyrulemap.jpg'); */
-    
-    /* Full height */
-    /* height: 80%;  */
-    /* min-height: 100%;
-    min-width: 1024px;
-    */
-    /* Set up proportionate scaling */
-    /* width: 100%;
-    height: auto;
-    */
-    /* Set up positioning */
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    */
-    /* Center and scale the image nicely */
-    
-;
+body {
+    font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    background: rgb(174, 224, 153);
+    opacity: 80%;
+    height: 290px;
+    width: 500px;
+    margin: 0;
+    margin-left: 5%;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(2, 2, 2);
+}
+
+
 main {
-    position: relative;
-}
-#quest-one {
-    font-size: 15px;
-    position: absolute;
-    top:500px;    
-    right:70px;    
-    color: red;
-    text-shadow: 3px 3px 3px black;
+    /* position: relative; */
+    margin-bottom: 100px;
+
 }
 
-#quest-two {
+.quest {
     font-size: 25px;
     position: absolute;
-    top:84%;    
-    right: 67%;    
-    color: red;
-    text-shadow: 3px 3px 3px black;
+    color: rgb(233, 248, 18);
+    text-shadow: 2px 2px 2px black;
 }
-
-#quest-three {
-    font-size: 25px;
-    position: absolute;
-    top: 19%;    
-    right: 42%;    
-    color: red;
-    text-shadow: 3px 3px 3px black;
-}
-
 
 .quest.completed {
     color: whitesmoke;
-    font-size: .9em;
+    font-size: 20px;
 }
 
 .quest.completed:after {
     content: ' ✔';
+    color: cyan;
 }
+
 html {
     background: url('../assets/hyrulemap.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     overflow: hidden;
-  }
+    justify-content: center;
+}
 
 h2 {
     left: 50;
+}
+
+#hero {
+    height: 100px;
 }
