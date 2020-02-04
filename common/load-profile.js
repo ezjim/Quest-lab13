@@ -6,7 +6,7 @@ function loadPlayerData() {
     const name = document.getElementById('name');
     const hero = document.getElementById('hero');
     const hearts = document.getElementById('hearts');
-    const coins = document.getElementById('gold');
+    const coins = document.getElementById('coins');
 
     // start up = load and parse JSON with user data from local storage
     const user = getUserData();

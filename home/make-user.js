@@ -3,20 +3,20 @@ function makeUserData(formData) {
     const user = {
         name: formData.get('name'),
         hero: formData.get('hero'),
-        hearts: 35,
-        gold: 0,
+        hearts: 10,
+        coins: 20,
         completed: {}
     };
 
     return user;
 }
-
-export const newMakeUser = (formData) => ({
-    name: formData.get('name'),
-    hero: formData.get('hero'),
-    hearts: 35,
-    gold: 0,
-    completed: {}
-});
+                    //not currently using //        
+// export const newMakeUserData = (formData) => ({
+//     name: formData.get('name'),
+//     hero: formData.get('hero'),
+//     hearts: 35,
+//     gold: 0,
+//     completed: {} 
+// });
 
 export default makeUserData;

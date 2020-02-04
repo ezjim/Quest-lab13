@@ -1,8 +1,5 @@
 import loadPlayerData from '../common/load-profile.js';
-import {
-    getUserData,
-    saveUserData
-} from '../data/store.js';
+import { getUserData, saveUserData } from '../data/store.js';
 import quests from '../data/api.js';
 import createChoice from './create-choice.js';
 import findById from '../common/find-by-ids.js';
@@ -12,7 +9,7 @@ loadPlayerData();
 
 //grab the query param from the URL
 const searchParams = new URLSearchParams(window.location.search);
-console.log(window.location.search)
+console.log(window.location.search);
 // go get quest id from the URL
 const questId = searchParams.get('id');
 console.log(questId);

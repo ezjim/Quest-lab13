@@ -78,9 +78,50 @@ const chompchomp = {
     }]
 };
 
+const bigSnake = {
+    id: 'big snake',
+    name: 'Big Snake',
+    title: 'Really big Snake',
+    map: {
+        top: '65%',
+        left: '75%'
+    },
+    image: 'bigSnake.jpg',
+    audio: 'bowserfalls.wav',
+    action: 'bowserfire.wav',
+    description:`
+        The road to the princess is treacherous!! You have entered the Dust Runes, you don't ever hear much about the dust runes because.. AHHHHHHHHHHHH!
+        `,
+
+    choices: [{
+        id:'bargin',
+        description: 'You get to live, but you lose something',
+        result:` Lose a life, get to fight another day
+        `,
+        hears: null,
+        coins: -4
+    }, {
+        id:'fight',
+        description: 'you have watched enough discover / animal planet to know that nothing beats a can of raid, for this mission we need a case.',
+        result:`you win!!!
+        `,
+        hearts: -1,
+        coins: +4
+    }, {
+        id:'escape',
+        description: 'lose all gold? and a life?',
+        result:`lose all gold and escape?
+        `,
+        // hp: ??
+        // gold: ??  
+    
+    }]
+};
+
 const quests = [
     bowser,
     chompchomp,
+    bigSnake,
 ];
 
 export default quests;

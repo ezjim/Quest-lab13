@@ -10,17 +10,17 @@ const user = getUserData();
 
 const storyResults = document.getElementById('story-display');
 
-const heartsResult = scoreHearts(user.hp) // 6+hears 3+ hearts 0hearts
-const coinResult = scoreCoins(user.gold) // YOOOOOOOOOOO SWITCH ALL THE GOLD TO COINS MY DUDE.
+const heartsResult = scoreHearts(user.hearts) // 6+hears 3+ hearts 0hearts
+const coinResult = scoreCoins(user.coins) // YOOOOOOOOOOO SWITCH ALL THE coins TO COINS MY DUDE.
 const heartsMessage = heartsMessages[heartsResult];
 
-let goldMessages = null;
+let coinsMessages = null;
 if (heartsResult === 'DED') {
-    goldMessages = deadGoldMessages;
+    coinsMessages = deadcoinsMessages;
 } else {
-    goldMessages = aliveGoldMessages;
+    coinsMessages = alivecoinsMessages;
 }
 
-const goldMessage = goldMessages[goldResult];// goldmessages the array, and we are calling the gold result
+const coinsMessage = coinsMessages[coinsResult];// coinsmessages the array, and we are calling the coins result
 
 let story = 'Till the next journey Hero!, ';
