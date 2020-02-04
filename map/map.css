@@ -1,0 +1,51 @@
+body {
+    font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    background: rgb(174, 224, 153);
+    opacity: 80%;
+    height: 290px;
+    width: 500px;
+    margin: 0;
+    margin-left: 5%;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(2, 2, 2);
+}
+
+
+main {
+    /* position: relative; */
+    margin-bottom: 100px;
+
+}
+
+.quest {
+    font-size: 25px;
+    position: absolute;
+    color: rgb(233, 248, 18);
+    text-shadow: 2px 2px 2px black;
+}
+
+.quest.completed {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.quest.completed:after {
+    content: ' ✔';
+    color: cyan;
+}
+
+html {
+    background: url('../assets/hyrulemap.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+h2 {
+    left: 50;
+}
+
+#hero {
+    height: 100px;
+}

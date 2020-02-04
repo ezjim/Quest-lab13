@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Hyrules Heros</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://fontmeme.com/nintendo-font/"><img id="header"
+                src="https://fontmeme.com/permalink/200131/be5eb520a99d7e88b84b66278e5e9559.png" alt="nintendo-font"
+                border="0"></a>
+        <!-- could add image in here -->
+    </header>
+
+
+    <main>
+        <h2>
+            Start adventure
+        </h2>
+        <div class="moving">
+            <form id="user-enlist">
+                <p class="text-prompt">
+                    <label for="name">Enlist now:</label>
+                    <input id="name" name="name" required>
+                </p>
+                <fieldset>
+                    <legend> Pick your Hero</legend>
+                    <!-- <div class="selection"> -->
+                    <p id="hero">
+                        <label>
+                            Samus
+                            <input type="radio" name="hero" required value="samus">
+                            <img src="assets/samus.gif">
+                        </label>
+
+                        <label>
+                            Mario
+                            <input type="radio" name="hero" required value="mario">
+                            <img src="assets/mario.gif">
+                        </label>
+
+                        <label>
+                            Link
+                            <input type="radio" name="hero" required value="link">
+                            <img src="assets/link.gif">
+                        </label>
+                    </p>
+                    <!-- </div> -->
+                </fieldset>
+                <button>Begin</button>
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="./home/home.js"></script>
+</body>
+
+</html>
